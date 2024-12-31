@@ -11,6 +11,7 @@
         <input type="hidden" name="filter" value="{{ request('filter') }}" />
 
         <button type="submit" class="btn h-10">Search</button>
+        
         <a href="{{ route('books.index') }}" class="btn h-10">Clear</a>
 
     </form>

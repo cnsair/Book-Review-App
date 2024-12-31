@@ -21,6 +21,10 @@
   </div>
   
   <div>
+    <a href="{{ route('books.reviews.create', $book) }}" class="reset-link">Add a Review!</a>
+  </div>
+
+  <div>
     <h2 class="mb-4 text-xl font-semibold">Reviews</h2>
     <ul>
       @forelse ($book->reviews as $review)

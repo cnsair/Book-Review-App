@@ -21,7 +21,7 @@ class Book extends Model
         return $query->where('title', 'LIKE', '%'.$title.'%');
     }
 
-    public function scopeWithreviewCount(Builder $query, $from = null, $to = null):Builder|QueryBuilder
+    public function scopeWithReviewCount(Builder $query, $from = null, $to = null):Builder|QueryBuilder
     {
         return $query->withCount([
 
